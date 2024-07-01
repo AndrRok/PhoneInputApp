@@ -59,7 +59,7 @@ struct PhoneTextField: View {
                             Rectangle()//сам курсор
                                 .fill(Color.white)
                                 .frame(width: 2, height: 20)
-                                .offset(x: phone.isEmpty ? 54 : 48)
+                                .offset(x: phone.isEmpty ? 80 : 74)
                                 .onReceive(timer) { _ in
                                     self.isBlinking.toggle()
                                 }
