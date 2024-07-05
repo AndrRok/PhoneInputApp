@@ -11,6 +11,10 @@ import Combine
 struct PhoneTextField: View {
     
     @Binding var phone: String
+    @State private var isBlinking: Bool = .init(true)
+    @State private var newPhone: String = .init("(___) ___ - __ - __")
+    @FocusState private var isFocused: Bool
+    private let timer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
     
     var body: some View {
         
@@ -28,61 +32,74 @@ struct PhoneTextField: View {
                 }
             }
             .background(//маска
-                HStack(spacing: 8) {
-                    Text("+7")
-                    Text(newPhone)
-                    Spacer()
-                }
-                    .foregroundStyle(Color.white)
-                    .font(.system(size: 16, weight: .medium))
-                    .padding(.horizontal, 24)
-                    .padding(.vertical, 14)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .foregroundStyle(
-                                Color.white.opacity(0.08)
-                            )
-                    )
-                    .padding(.horizontal, 24)
-                    .frame(maxHeight: 48)
+                VStack(alignment: .leading, spacing: 2) {
+                    switch showEnterAllert {
+                        case true:
+                            Text(LocalizedStringKey("incorrectPhoneFormat"))
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundStyle(Color.red)
+                        default:
+                            EmptyView()
+                    }
+                    HStack(spacing: 8) {
+                        Text("+7")
+                        Text(newPhone)
+                        Spacer()
+                    }
                     .overlay(alignment: .leading) {//отрисовка курсора
                         HStack(spacing: 0) {
                             switch phone.isEmpty {
                                 case false:
-                                    Text(formatPhoneNumber(phone, needAddLines: false))
+                                    Text(phone.phoneMaskString(needAddLines: false))
                                         .foregroundStyle(Color.clear)
                                         .font(.system(size: 16, weight: .medium))
                                 default:
                                     EmptyView()
                             }
-                            
                             Rectangle()//сам курсор
                                 .fill(Color.white)
                                 .frame(width: 2, height: 20)
-                                .offset(x: phone.isEmpty ? 80 : 74)
+                                .offset(x: phone.isEmpty ? 34 : 26)
                                 .onReceive(timer) { _ in
                                     self.isBlinking.toggle()
                                 }
                                 .opacity((isBlinking && isFocused) ? 1 : 0)
-                            Spacer()
                         }
                     }
+                }
+                    .foregroundStyle(Color.white)
+                    .font(.system(size: 16, weight: .medium))
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 12)
+                    .background(
+                        RoundedRectangle(cornerRadius: 12)
+                            .foregroundStyle(
+                                Color.white.opacity(0.08)
+                                
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color.red, lineWidth: showEnterAllert ? 1 : 0)
+                            )
+                    )
+                    .padding(.horizontal, 24)
+                    .frame(maxHeight: 48)
+                
             )
             .onChange(of: phone) {
                 if phone.count >= 11 {
                     phone.removeLast()
                     hideKeyboard()
                 } else {
-                    newPhone = formatPhoneNumber(phone)
+                    newPhone = phone.phoneMaskString()
                 }
             }
             .selectionDisabled()//не работает с textfield
     }
     
-    @State private var isBlinking: Bool = .init(true)
-    @State private var newPhone: String = .init("(___) ___ - __ - __")
-    @FocusState private var isFocused: Bool
-    private let timer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
+    private var showEnterAllert: Bool {
+        phone.count > 0 && phone.count < 10
+    }
 }
 
 #Preview {

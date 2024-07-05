@@ -11,7 +11,7 @@ import SwiftUI
 struct PhoneInputAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhoneInputView()
         }
     }
 }
