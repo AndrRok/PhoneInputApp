@@ -84,7 +84,6 @@ struct PhoneTextField: View {
                     )
                     .padding(.horizontal, 24)
                     .frame(maxHeight: 48)
-                
             )
             .onChange(of: phone) {
                 if phone.count >= 11 {

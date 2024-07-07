@@ -36,7 +36,6 @@ struct PhoneInputView: View {
                     CustomBackgroundGradient()
                 )
                 .frame(maxWidth: 400)
-                
             }
             .onTapGesture {
                 hideKeyboard()

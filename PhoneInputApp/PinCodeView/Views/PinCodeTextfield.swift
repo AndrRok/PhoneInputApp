@@ -9,7 +9,9 @@ import SwiftUI
 import Combine
 
 struct PinCodeTextfield: View {
-    @Binding var pinCode: String
+    
+    @Binding var pinCode: String//также можно использовать массив
+    
     var body: some View {
         TextField("", text: $pinCode)
             .keyboardType(.decimalPad)
@@ -47,7 +49,6 @@ struct PinCodeTextfield: View {
                                     Color.white.opacity(0.08)
                                 )
                         )
-                       
                     
                     Text(getSymbol(string: pinCode, symbolId: 2))
                         .frame(minWidth: 22, minHeight: 44)
@@ -60,8 +61,6 @@ struct PinCodeTextfield: View {
                                 )
                         )
                     
-                       
-                    
                     Text(getSymbol(string: pinCode, symbolId: 3))
                         .frame(minWidth: 22, minHeight: 44)
                         .padding(.vertical, 18)
@@ -71,7 +70,7 @@ struct PinCodeTextfield: View {
                                 .foregroundStyle(
                                     Color.white.opacity(0.08)
                                 )
-                        )    
+                        )
                 }
                 .foregroundStyle(Color.white)
             }
@@ -86,7 +85,6 @@ struct PinCodeTextfield: View {
         } else {
             return ""
         }
-        
     }
     
     @FocusState private var isFocused: Bool

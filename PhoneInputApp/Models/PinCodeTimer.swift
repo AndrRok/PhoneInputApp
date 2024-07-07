@@ -10,9 +10,8 @@ import Combine
 
 @Observable
 class BaseViewModel {
-    var cancellableSet: Set<AnyCancellable> = []
+    var cancellableSet: Set<AnyCancellable> = .init([])
 }
-
 
 @Observable
 final class PinCodeTimer: BaseViewModel {

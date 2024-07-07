@@ -45,8 +45,6 @@ struct PinCodeView: View {
                     
                     turnBackButton
                 }
-                
-                
             }
             .onTapGesture {
                 hideKeyboard()

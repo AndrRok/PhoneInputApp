@@ -17,7 +17,5 @@ extension View {
         self
             .opacity(isHide ? 0 : 1)
     }
-    
-    
 }
 
