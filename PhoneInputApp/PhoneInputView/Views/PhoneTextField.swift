@@ -25,7 +25,7 @@ struct PhoneTextField: View {
             .font(.system(size: 20))
             .tint(.clear)
             .focused($isFocused)
-            .onReceive(Just(phone)) { newValue in//удаление лишнил символов
+            .onReceive(Just(phone)) { newValue in//удаление лишних символов
                 let filtered = newValue.filter { "0123456789".contains($0) }
                 if filtered != newValue {
                     self.phone = filtered
