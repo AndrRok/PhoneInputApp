@@ -35,6 +35,8 @@ final class PinCodeTimer: BaseViewModel {
                 guard let self = self else { return }
                 if self.seconds > 0 {
                     self.seconds -= 1
+                } else {
+                    timer = nil
                 }
             }
             .store(in: &cancellableSet)
