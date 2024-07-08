@@ -30,6 +30,13 @@ struct PhoneTextField: View {
                 if filtered != newValue {
                     self.phone = filtered
                 }
+                
+                if phone.count >= 11 {
+                    phone.removeLast()
+                    hideKeyboard()
+                } else {
+                    newPhone = phone.phoneMaskString()
+                }
             }
             .background(//маска
                 VStack(alignment: .leading, spacing: 2) {
@@ -85,14 +92,6 @@ struct PhoneTextField: View {
                     .padding(.horizontal, 24)
                     .frame(maxHeight: 48)
             )
-            .onChange(of: phone) {
-                if phone.count >= 11 {
-                    phone.removeLast()
-                    hideKeyboard()
-                } else {
-                    newPhone = phone.phoneMaskString()
-                }
-            }
             .selectionDisabled()//не работает с textfield
     }
     
