@@ -20,7 +20,7 @@ struct PinCodeTextfield: View {
             .font(.system(size: 36, weight: .medium))
             .tint(.clear)
             .focused($isFocused)
-            .onReceive(Just(pinCode)) { newValue in//удаление лишнил символов
+            .onReceive(Just(pinCode)) { newValue in//удаление лишних символов
                 let filtered = newValue.filter { "0123456789".contains($0) }
                 if filtered != newValue, filtered.count < 5 {
                     self.pinCode = filtered
@@ -78,7 +78,7 @@ struct PinCodeTextfield: View {
             .padding(.bottom, 24)
     }
     
-    func getSymbol(string: String, symbolId: Int) -> String {
+    private func getSymbol(string: String, symbolId: Int) -> String {
         if symbolId < string.count {
             return String(string[string.index(string.startIndex, offsetBy: symbolId)])
             
