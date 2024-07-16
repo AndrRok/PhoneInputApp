@@ -8,7 +8,6 @@
 import SwiftUI
 import Combine
 
-
 struct PhoneTextField: View {
     
     @Binding var phone: String
