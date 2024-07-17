@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620379682C4859B3003337E4 /* HW4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620379672C4859B3003337E4 /* HW4.swift */; };
 		62265FE42C386D9E00AC36F6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE32C386D9E00AC36F6 /* String+Ext.swift */; };
 		62265FE72C386E3800AC36F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62265FE52C386E3800AC36F6 /* Localizable.strings */; };
 		62265FEA2C387CEF00AC36F6 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE92C387CEF00AC36F6 /* CustomBackgroundView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620379672C4859B3003337E4 /* HW4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW4.swift; sourceTree = "<group>"; };
 		62265FE32C386D9E00AC36F6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		62265FE62C386E3800AC36F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62265FE82C386F3400AC36F6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -51,6 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620379652C48599B003337E4 /* OtherHW */ = {
+			isa = PBXGroup;
+			children = (
+				620379662C4859A6003337E4 /* HW4 */,
+			);
+			path = OtherHW;
+			sourceTree = "<group>";
+		};
+		620379662C4859A6003337E4 /* HW4 */ = {
+			isa = PBXGroup;
+			children = (
+				620379672C4859B3003337E4 /* HW4.swift */,
+			);
+			path = HW4;
+			sourceTree = "<group>";
+		};
 		622C43E52C31A2F800BA21C0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +88,7 @@
 		622C43F02C31A2F800BA21C0 /* PhoneInputApp */ = {
 			isa = PBXGroup;
 			children = (
+				620379652C48599B003337E4 /* OtherHW */,
 				62CB3B132C33098900E6E540 /* ViewModifiers */,
 				62CB3B102C33097100E6E540 /* PinCodeView */,
 				62CB3B0C2C33093000E6E540 /* PhoneInputView */,
@@ -239,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620379682C4859B3003337E4 /* HW4.swift in Sources */,
 				62265FE42C386D9E00AC36F6 /* String+Ext.swift in Sources */,
 				62C12F752C32BABB007F10E5 /* View+Ext.swift in Sources */,
 				622C43F42C31A2F800BA21C0 /* PhoneInputView.swift in Sources */,
