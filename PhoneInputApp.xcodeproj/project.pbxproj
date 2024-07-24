@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		620379682C4859B3003337E4 /* HW4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620379672C4859B3003337E4 /* HW4.swift */; };
+		6203796E2C486195003337E4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6203796D2C486195003337E4 /* Localizable.xcstrings */; };
 		62265FE42C386D9E00AC36F6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE32C386D9E00AC36F6 /* String+Ext.swift */; };
-		62265FE72C386E3800AC36F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62265FE52C386E3800AC36F6 /* Localizable.strings */; };
 		62265FEA2C387CEF00AC36F6 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE92C387CEF00AC36F6 /* CustomBackgroundView.swift */; };
 		622C43F22C31A2F800BA21C0 /* PhoneInputAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C43F12C31A2F800BA21C0 /* PhoneInputAppApp.swift */; };
 		622C43F42C31A2F800BA21C0 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C43F32C31A2F800BA21C0 /* PhoneInputView.swift */; };
@@ -25,9 +25,8 @@
 
 /* Begin PBXFileReference section */
 		620379672C4859B3003337E4 /* HW4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW4.swift; sourceTree = "<group>"; };
+		6203796D2C486195003337E4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		62265FE32C386D9E00AC36F6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
-		62265FE62C386E3800AC36F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		62265FE82C386F3400AC36F6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62265FE92C387CEF00AC36F6 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		622C43EE2C31A2F800BA21C0 /* PhoneInputApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneInputApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		622C43F12C31A2F800BA21C0 /* PhoneInputAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputAppApp.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		622C43E52C31A2F800BA21C0 = {
 			isa = PBXGroup;
 			children = (
+				6203796D2C486195003337E4 /* Localizable.xcstrings */,
 				622C43F02C31A2F800BA21C0 /* PhoneInputApp */,
 				622C43EF2C31A2F800BA21C0 /* Products */,
 			);
@@ -97,7 +97,6 @@
 				622C43F12C31A2F800BA21C0 /* PhoneInputAppApp.swift */,
 				622C43F52C31A2FB00BA21C0 /* Assets.xcassets */,
 				622C43F72C31A2FB00BA21C0 /* Preview Content */,
-				62265FE52C386E3800AC36F6 /* Localizable.strings */,
 			);
 			path = PhoneInputApp;
 			sourceTree = "<group>";
@@ -246,8 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				622C43F92C31A2FB00BA21C0 /* Preview Assets.xcassets in Resources */,
-				62265FE72C386E3800AC36F6 /* Localizable.strings in Resources */,
 				622C43F62C31A2FB00BA21C0 /* Assets.xcassets in Resources */,
+				6203796E2C486195003337E4 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,18 +272,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		62265FE52C386E3800AC36F6 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				62265FE62C386E3800AC36F6 /* en */,
-				62265FE82C386F3400AC36F6 /* ru */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		622C43FA2C31A2FB00BA21C0 /* Debug */ = {
