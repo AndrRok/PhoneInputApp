@@ -1,0 +1,101 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "" : {
+
+    },
+    "+7" : {
+
+    },
+    "Авторизация" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "  Authorization"
+          }
+        }
+      }
+    },
+    "Авторизоваться" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Authorize"
+          }
+        }
+      }
+    },
+    "Вернуться назад" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go back"
+          }
+        }
+      }
+    },
+    "Вход по номеру телефона" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter by phone number"
+          }
+        }
+      }
+    },
+    "Длинный формат: %@" : {
+
+    },
+    "Запросить код" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask the code"
+          }
+        }
+      }
+    },
+    "Запросить повторно через" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ask again after"
+          }
+        }
+      }
+    },
+    "Короткий формат: %@" : {
+
+    },
+    "Некорректный формат номера" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incorrect phone format"
+          }
+        }
+      }
+    },
+    "сек" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sec"
+          }
+        }
+      }
+    },
+    "Средний формат: %@" : {
+
+    }
+  },
+  "version" : "1.0"
+}
