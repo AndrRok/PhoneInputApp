@@ -16,7 +16,6 @@ struct PhoneInputView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                
                 CustomBackgroundView()
                 
                 VStack(alignment: .center, spacing: 0) {
@@ -40,6 +39,7 @@ struct PhoneInputView: View {
             .onTapGesture {
                 hideKeyboard()
             }
+          
         }
     }
 }
@@ -47,7 +47,7 @@ struct PhoneInputView: View {
 private extension PhoneInputView {
     
     var authoriztaionTitle: some View {
-        Text(LocalizedStringKey("authorize"))
+        Text("Авторизация")
             .foregroundStyle(Color.white)
             .font(.system(size: 24, weight: .semibold))
             .padding(.bottom, 28)
@@ -64,7 +64,7 @@ private extension PhoneInputView {
     }
     
     var phoneNumberLoginTitle: some View {
-        Text(LocalizedStringKey("phoneNumberEnter"))
+        Text("Вход по номеру телефона")
             .foregroundStyle(Color.white)
             .font(.system(size: 16))
             .padding(.bottom, 32)
@@ -75,7 +75,7 @@ private extension PhoneInputView {
         NavigationLink {
             PinCodeView(phone: phone, timer: timer)
         } label: {
-            Text(LocalizedStringKey("askTheCode"))
+            Text("Запросить код")
         }
         .disabled(!(phone.count == 10))
         .buttonStyle(WBButtonStyle())

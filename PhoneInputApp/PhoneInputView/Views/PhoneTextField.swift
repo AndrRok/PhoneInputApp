@@ -42,7 +42,7 @@ struct PhoneTextField: View {
                 VStack(alignment: .leading, spacing: 2) {
                     switch showEnterAllert {
                         case true:
-                            Text(LocalizedStringKey("incorrectPhoneFormat"))
+                            Text("Некорректный формат номера")
                                 .font(.system(size: 12, weight: .medium))
                                 .foregroundStyle(Color.red)
                         default:

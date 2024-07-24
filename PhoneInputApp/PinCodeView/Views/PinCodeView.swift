@@ -81,9 +81,9 @@ private extension PinCodeView {
             timer.resetTimer()
         } label: {
             HStack(spacing: 4) {
-                Text(LocalizedStringKey("askTheCodeAgain"))
+                Text("Запросить повторно через")
                 Text(String(timer.seconds))
-                Text(LocalizedStringKey("secondsShort"))
+                Text("сек")
             }
             .font(.system(size: 14))
         }
@@ -95,7 +95,7 @@ private extension PinCodeView {
         NavigationLink {
             PinCodeView(phone: phone, timer: timer)
         } label: {
-            Text(LocalizedStringKey("authorize"))
+            Text("Авторизоваться")
         }
         .buttonStyle(WBButtonStyle())
     }
@@ -106,7 +106,7 @@ private extension PinCodeView {
         } label: {
             HStack(spacing: 8) {
                 Image(systemName: "chevron.left")
-                Text(LocalizedStringKey("turnBack"))
+                Text("Вернуться назад")
             }
         }
         .foregroundStyle(Color.white)
