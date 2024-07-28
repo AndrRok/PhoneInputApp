@@ -1,0 +1,33 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "" : {
+
+    },
+    "+7" : {
+
+    },
+    "askTheCode" : {
+
+    },
+    "askTheCodeAgain" : {
+
+    },
+    "authorize" : {
+
+    },
+    "incorrectPhoneFormat" : {
+
+    },
+    "phoneNumberEnter" : {
+
+    },
+    "secondsShort" : {
+
+    },
+    "turnBack" : {
+
+    }
+  },
+  "version" : "1.0"
+}
