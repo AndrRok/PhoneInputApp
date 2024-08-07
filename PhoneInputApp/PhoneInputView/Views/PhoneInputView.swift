@@ -15,9 +15,9 @@ struct PhoneInputView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
+            
                 
-                CustomBackgroundView()
+             
                 
                 VStack(alignment: .center, spacing: 0) {
                     authoriztaionTitle
@@ -32,11 +32,9 @@ struct PhoneInputView: View {
                     askThePinCodeButton
                     
                 }
-                .background(
-                    CustomBackgroundGradient()
-                )
+                .customBackgroundImage()
                 .frame(maxWidth: 400)
-            }
+            
             .onTapGesture {
                 hideKeyboard()
             }

@@ -20,9 +20,9 @@ struct PinCodeView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
+           
                 
-                CustomBackgroundView()
+                
                 
                 VStack(spacing: 24) {
                     VStack(alignment: .center, spacing: 0) {
@@ -38,14 +38,12 @@ struct PinCodeView: View {
                         authorizeButton
                         
                     }
-                    .background(
-                        CustomBackgroundGradient()
-                    )
+                    .customBackgroundGradient()
                     .frame(maxWidth: 400)
                     
                     turnBackButton
                 }
-            }
+                .customBackgroundImage()
             .onTapGesture {
                 hideKeyboard()
             }
@@ -93,7 +91,7 @@ private extension PinCodeView {
     
     var authorizeButton: some View {
         NavigationLink {
-            PinCodeView(phone: phone, timer: timer)
+           StatisticScreen()
         } label: {
             Text(LocalizedStringKey("authorize"))
         }

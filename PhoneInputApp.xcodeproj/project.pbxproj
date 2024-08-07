@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6215507D2C5A56DA0093360D /* StatisticScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6215507C2C5A56DA0093360D /* StatisticScreen.swift */; };
 		62265FE42C386D9E00AC36F6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE32C386D9E00AC36F6 /* String+Ext.swift */; };
 		62265FE72C386E3800AC36F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62265FE52C386E3800AC36F6 /* Localizable.strings */; };
 		62265FEA2C387CEF00AC36F6 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62265FE92C387CEF00AC36F6 /* CustomBackgroundView.swift */; };
@@ -14,6 +15,14 @@
 		622C43F42C31A2F800BA21C0 /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C43F32C31A2F800BA21C0 /* PhoneInputView.swift */; };
 		622C43F62C31A2FB00BA21C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622C43F52C31A2FB00BA21C0 /* Assets.xcassets */; };
 		622C43F92C31A2FB00BA21C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622C43F82C31A2FB00BA21C0 /* Preview Assets.xcassets */; };
+		628A16A32C636ECC00917FAB /* CircularProgressViewTextInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16A22C636ECC00917FAB /* CircularProgressViewTextInside.swift */; };
+		628A16A52C636EDF00917FAB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16A42C636EDF00917FAB /* CircularProgressView.swift */; };
+		628A16A72C636F2400917FAB /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16A62C636F2400917FAB /* StatisticView.swift */; };
+		628A16A92C636F6000917FAB /* MarketingSpecialistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16A82C636F6000917FAB /* MarketingSpecialistsView.swift */; };
+		628A16AB2C636F9700917FAB /* ExternalTrafficView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16AA2C636F9700917FAB /* ExternalTrafficView.swift */; };
+		628A16AD2C636FCD00917FAB /* TrandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16AC2C636FCD00917FAB /* TrandsView.swift */; };
+		628A16AF2C63700A00917FAB /* VerticalButtonsSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16AE2C63700A00917FAB /* VerticalButtonsSet.swift */; };
+		628A16B12C63702D00917FAB /* HorizontalButtonSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A16B02C63702D00917FAB /* HorizontalButtonSet.swift */; };
 		62C12F752C32BABB007F10E5 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C12F742C32BABB007F10E5 /* View+Ext.swift */; };
 		62C12F772C32BB06007F10E5 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C12F762C32BB06007F10E5 /* PhoneTextField.swift */; };
 		62C12F792C32D26F007F10E5 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C12F782C32D26F007F10E5 /* ButtonStyles.swift */; };
@@ -23,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6215507C2C5A56DA0093360D /* StatisticScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticScreen.swift; sourceTree = "<group>"; };
 		62265FE32C386D9E00AC36F6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		62265FE62C386E3800AC36F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		62265FE82C386F3400AC36F6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -32,6 +42,14 @@
 		622C43F32C31A2F800BA21C0 /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
 		622C43F52C31A2FB00BA21C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		622C43F82C31A2FB00BA21C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		628A16A22C636ECC00917FAB /* CircularProgressViewTextInside.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewTextInside.swift; sourceTree = "<group>"; };
+		628A16A42C636EDF00917FAB /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		628A16A62C636F2400917FAB /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
+		628A16A82C636F6000917FAB /* MarketingSpecialistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingSpecialistsView.swift; sourceTree = "<group>"; };
+		628A16AA2C636F9700917FAB /* ExternalTrafficView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalTrafficView.swift; sourceTree = "<group>"; };
+		628A16AC2C636FCD00917FAB /* TrandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandsView.swift; sourceTree = "<group>"; };
+		628A16AE2C63700A00917FAB /* VerticalButtonsSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalButtonsSet.swift; sourceTree = "<group>"; };
+		628A16B02C63702D00917FAB /* HorizontalButtonSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalButtonSet.swift; sourceTree = "<group>"; };
 		62C12F742C32BABB007F10E5 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		62C12F762C32BB06007F10E5 /* PhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
 		62C12F782C32D26F007F10E5 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
@@ -51,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6215507A2C5A55C70093360D /* StatisticScreen */ = {
+			isa = PBXGroup;
+			children = (
+				628A16A12C636EBF00917FAB /* SubViews */,
+				6215507C2C5A56DA0093360D /* StatisticScreen.swift */,
+			);
+			path = StatisticScreen;
+			sourceTree = "<group>";
+		};
 		622C43E52C31A2F800BA21C0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +97,7 @@
 		622C43F02C31A2F800BA21C0 /* PhoneInputApp */ = {
 			isa = PBXGroup;
 			children = (
+				6215507A2C5A55C70093360D /* StatisticScreen */,
 				62CB3B132C33098900E6E540 /* ViewModifiers */,
 				62CB3B102C33097100E6E540 /* PinCodeView */,
 				62CB3B0C2C33093000E6E540 /* PhoneInputView */,
@@ -89,6 +117,21 @@
 				622C43F82C31A2FB00BA21C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		628A16A12C636EBF00917FAB /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				628A16A22C636ECC00917FAB /* CircularProgressViewTextInside.swift */,
+				628A16A42C636EDF00917FAB /* CircularProgressView.swift */,
+				628A16A62C636F2400917FAB /* StatisticView.swift */,
+				628A16A82C636F6000917FAB /* MarketingSpecialistsView.swift */,
+				628A16AA2C636F9700917FAB /* ExternalTrafficView.swift */,
+				628A16AC2C636FCD00917FAB /* TrandsView.swift */,
+				628A16AE2C63700A00917FAB /* VerticalButtonsSet.swift */,
+				628A16B02C63702D00917FAB /* HorizontalButtonSet.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		62CB3B0C2C33093000E6E540 /* PhoneInputView */ = {
@@ -239,15 +282,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6215507D2C5A56DA0093360D /* StatisticScreen.swift in Sources */,
+				628A16AB2C636F9700917FAB /* ExternalTrafficView.swift in Sources */,
 				62265FE42C386D9E00AC36F6 /* String+Ext.swift in Sources */,
 				62C12F752C32BABB007F10E5 /* View+Ext.swift in Sources */,
+				628A16AF2C63700A00917FAB /* VerticalButtonsSet.swift in Sources */,
+				628A16A92C636F6000917FAB /* MarketingSpecialistsView.swift in Sources */,
 				622C43F42C31A2F800BA21C0 /* PhoneInputView.swift in Sources */,
 				62C12F772C32BB06007F10E5 /* PhoneTextField.swift in Sources */,
 				62C12F792C32D26F007F10E5 /* ButtonStyles.swift in Sources */,
 				62265FEA2C387CEF00AC36F6 /* CustomBackgroundView.swift in Sources */,
+				628A16A72C636F2400917FAB /* StatisticView.swift in Sources */,
 				62D11D682C33EFB000EA888E /* PinCodeTextfield.swift in Sources */,
+				628A16B12C63702D00917FAB /* HorizontalButtonSet.swift in Sources */,
 				622C43F22C31A2F800BA21C0 /* PhoneInputAppApp.swift in Sources */,
+				628A16A32C636ECC00917FAB /* CircularProgressViewTextInside.swift in Sources */,
+				628A16AD2C636FCD00917FAB /* TrandsView.swift in Sources */,
 				62CB3B0B2C33092B00E6E540 /* PinCodeView.swift in Sources */,
+				628A16A52C636EDF00917FAB /* CircularProgressView.swift in Sources */,
 				62D11D6B2C33FD6300EA888E /* PinCodeTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
